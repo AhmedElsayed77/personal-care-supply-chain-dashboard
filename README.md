@@ -1,4 +1,4 @@
-# Personal Care Supply Chain Analysis Dashboard
+# Personal Care Supply Chain Dashboard
 
 Interactive analytics dashboard analyzing a 100-SKU supply chain dataset across three personal care
 categories (haircare, skincare, cosmetics) in five Indian cities — from manufacturing and quality
