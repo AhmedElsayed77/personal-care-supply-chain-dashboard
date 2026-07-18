@@ -70,4 +70,4 @@ Power BI Desktop · Power Query (M) · DAX · Excel (source data)
 
 ---
 Built by **Ahmed Elsayed** — Data Analyst & BI Developer
-[LinkedIn](https://linkedin.com/in/ahmed-elsayed77) · [GitHub](https://github.com/AhmedElsayed77)
+[LinkedIn](https://linkedin.com/in/ahmed-elsayed77) · [portfolio](https://ahmedelsayed.portfolio77.workers.dev/)
