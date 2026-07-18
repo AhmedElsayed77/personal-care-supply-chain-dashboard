@@ -22,6 +22,8 @@ that quality gap.
 
 ## Data Model — Star Schema
 
+![Data Model](screenshots/data_model.png)
+
 - **Fact_SupplyChain** (grain: 1 row per SKU) — revenue, units sold, stock, shipping/production/
   manufacturing measures, defect rate, costs
 - **7 dimension tables**, each with a surrogate key: `Dim_ProductType`, `Dim_Location`,
@@ -30,7 +32,8 @@ that quality gap.
 
 A single fact table with flat, low-cardinality dimensions — a Star schema was used deliberately
 over Snowflake/Galaxy since there's no hierarchy to normalize and no second business process to
-justify a second fact table.
+justify a second fact table. Every relationship is a single-direction 1 (dimension) → many (fact)
+join on a surrogate key, keeping filter propagation simple and predictable.
 
 ## Charts (8, per task spec)
 
@@ -61,6 +64,7 @@ Power BI Desktop · Power Query (M) · DAX · Excel (source data)
 ├── Supply_Chain_Analysis_Report.pdf
 ├── data/supply_chain_data.xlsx
 ├── screenshots/dashboard_overview.png
+├── screenshots/data_model.png
 └── docs/DAX_Measures.md
 ```
 
